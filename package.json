@@ -1,0 +1,48 @@
+{
+	"name": "@wdmv/ckeditor-auto-remove-inline-styles",
+	"version": "0.1.0",
+	"description": "Remove inline styles",
+	"module": "./dist/index.esm.min.js",
+	"browser": "./dist/index.umd.min.js",
+	"main": "./dist/index.cjs.min.js",
+	"types": "./dist/types/index.esm.min.d.ts",
+	"scripts": {
+		"build": "rm -rf dist && rollup -c",
+		"watch": "rollup -c -w",
+		"prepublish:public": "npm run build",
+		"publish:public": "npm publish --access public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wdmv/ckeditor-auto-remove-inline-styles.git"
+	},
+	"keywords": [
+		"CKEditor",
+		"CKEditor",
+		"5",
+		"Plugin",
+		"Remove Inline styles"
+	],
+	"author": "Hussain Abeer",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/wdmv/ckeditor-auto-remove-inline-styles/issues"
+	},
+	"homepage": "https://github.com/wdmv/ckeditor-auto-remove-inline-styles#readme",
+	"files": [
+		"dist",
+		"types"
+	],
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^15.1.0",
+		"rollup": "^2.79.1",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-terser": "^7.0.2",
+		"rollup-plugin-ts": "^3.4.4",
+		"typescript": "^4.9.5"
+	},
+	"peerDependencies": {
+		"@ckeditor/ckeditor5-core": ">= 1.0.0"
+	}
+}
