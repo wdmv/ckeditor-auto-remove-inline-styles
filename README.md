@@ -44,7 +44,7 @@ ClassicEditor.create(document.querySelector("#editor"), {
 [stars-url]: https://github.com/wdmv/ckeditor-auto-remove-inline-styles/stargazers
 [issues-shield]: https://img.shields.io/github/issues/wdmv/ckeditor-auto-remove-inline-styles?style=for-the-badge
 [issues-url]: https://github.com/wdmv/ckeditor-auto-remove-inline-styles/issues
-[license-shield]: https://img.shields.io/github/license/wdmv/ckeditor-auto-remove-inline-styles?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/wdmv/ckeditor-auto-remove-inline-styles?style=for-the-badge&1
 [license-url]: https://github.com/wdmv/ckeditor-auto-remove-inline-styles/blob/main/LICENSE
 [version-shield]: https://img.shields.io/npm/v/@wdmv/ckeditor-auto-remove-inline-styles?label=Current%20Version&style=for-the-badge
 [version-url]: https://www.npmjs.com/package/@wdmv/ckeditor-auto-remove-inline-styles

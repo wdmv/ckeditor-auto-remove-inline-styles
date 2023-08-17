@@ -10,7 +10,7 @@
 		"allowJs": true,
 		"moduleResolution": "node",
 		"skipLibCheck": true,
-		"declaration": true,
+		"declaration": false,
 		"emitDeclarationOnly": true,
 		"declarationMap": false,
 		"declarationDir": "./dist/types"

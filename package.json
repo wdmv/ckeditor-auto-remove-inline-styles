@@ -5,9 +5,10 @@
 	"module": "./dist/index.esm.min.js",
 	"browser": "./dist/index.umd.min.js",
 	"main": "./dist/index.cjs.min.js",
-	"types": "./dist/types/index.esm.min.d.ts",
+	"types": "./types/index.d.ts",
 	"scripts": {
-		"build": "rm -rf dist && rollup -c",
+		"build": "rm -rf dist types && rollup -c",
+		"postbuild": "tsc -p ./tsconfig.types.json",
 		"watch": "rollup -c -w",
 		"prepublish:public": "npm run build",
 		"publish:public": "npm publish --access public"
@@ -18,9 +19,8 @@
 	},
 	"keywords": [
 		"CKEditor",
-		"CKEditor",
-		"5",
-		"Plugin",
+		"CKEditor 5",
+		"CKEditor 5 Plugin",
 		"Remove Inline styles"
 	],
 	"author": "Hussain Abeer",
@@ -43,6 +43,6 @@
 		"typescript": "^4.9.5"
 	},
 	"peerDependencies": {
-		"@ckeditor/ckeditor5-core": ">= 1.0.0"
+		"@ckeditor/ckeditor5-core": ">= 10.0.0"
 	}
 }

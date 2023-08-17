@@ -1,4 +1,4 @@
-import { Plugin } from "@ckeditor/ckeditor5-core";
+import Plugin from "@ckeditor/ckeditor5-core/src/plugin";
 
 class AutoRemoveInlineStyles extends Plugin {
 	init() {
