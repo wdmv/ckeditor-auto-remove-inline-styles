@@ -23,7 +23,7 @@ export default {
 			},
 		}),
 	],
-	external: ["@ckeditor/ckeditor5-core"],
+	external: ["@ckeditor/ckeditor5-core/src/plugin"],
 	output: [
 		{
 			name: "index",
