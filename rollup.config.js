@@ -23,27 +23,27 @@ export default {
 			},
 		}),
 	],
-	external: ["@ckeditor/ckeditor5-core"],
+	external: ["@ckeditor/ckeditor5-core/src/plugin"],
 	output: [
 		{
 			name: "index",
 			file: pkg.browser,
 			format: "umd",
 			exports: "default",
-			globals: { "@ckeditor/ckeditor5-core": "Plugin" },
+			globals: { "@ckeditor/ckeditor5-core/src/plugin": "Plugin" },
 		},
 		{
 			file: pkg.main,
 			format: "cjs",
 			strict: true,
 			exports: "default",
-			globals: { "@ckeditor/ckeditor5-core": "Plugin" },
+			globals: { "@ckeditor/ckeditor5-core/src/plugin": "Plugin" },
 		},
 		{
 			file: pkg.module,
 			format: "es",
 			exports: "default",
-			globals: { "@ckeditor/ckeditor5-core": "Plugin" },
+			globals: { "@ckeditor/ckeditor5-core/src/plugin": "Plugin" },
 		},
 	],
 };
